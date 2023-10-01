@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import {useState} from "react";
 import { FormLayout, TextField, Button } from "@shopify/polaris";
 import "./Editor.css";
 import {
@@ -10,8 +10,8 @@ function Editor({
   updatedJson,
   error,
   clearJsonCode,
-  setJsonCode,
 }) {
+  // eslint-disable-next-line no-unused-vars
   const [text, setText] = useState("");
   const [isCopied, setIsCopied] = useState(false);
   const [selectedFileName, setSelectedFileName] = useState("");
@@ -146,7 +146,7 @@ function Editor({
             </Button>
           </div>
 
-          
+
         </div>
       </div>
     </FormLayout>

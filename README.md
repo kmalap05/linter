@@ -35,6 +35,7 @@ The point values for each task will be determined based on its complexity and si
 There will be no more live feedback sessions, Any discussion can be carried out in the discussions channel.
 
 ## 🤝 How to Contribute:
+
 Go through the [CONTRIBUTING.md](/CONTRIBUTING.md) file, where all the guidelines have been mentioned that will guide you to make your contribution.
 The project follows a standard fork-and-pull model for contributions via GitHub. Here's a step-by-step guide:
 
@@ -55,6 +56,66 @@ We are committed to fostering a community that’s inclusive, respectful, and pr
 3. **Inclusivity:** Foster an environment that welcomes and supports people of all backgrounds and identities. This includes, but is not limited to, members of any race, ethnicity, culture, national origin, color, immigration status, social and economic class, educational level, sex, sexual orientation, gender identity and expression, age, size, family status, political belief, religion, and mental and physical ability.
 
 Breaching this Code of Conduct may lead to consequences including, but not limited to, removal from the project and forfeiture of accumulated points.
+
+## 📖 CI/CD Pipeline For Linting Linter: (New!)
+
+### 📘 **CI/CD Setup for Code Optimization Tool:**
+
+In order to effectively develop and maintain the code optimization tool, we propose implementing a robust Continuous Integration and Continuous Deployment (CI/CD) setup. This CI/CD setup will play a pivotal role in ensuring the quality, cleanliness, and efficiency of our codebase while also enhancing the overall development process.
+
+**Here's the concise explaination of the setup:**
+
+- **CI/CD Pipeline Setup:** I've set up a GitHub Actions CI/CD pipeline for our project to automate code quality and consistency checks.
+
+- **ESLint Integration:** I've integrated ESLint to enforce coding standards and identify code issues.
+
+- **Custom Rule Configuration:** I've defined custom ESLint rules to align with our project's coding standards.
+
+- **Workflow File:** I've created a lint-test.yaml workflow file that triggers on pushes and pull requests to the main branch.
+
+- **Automated Trigger:** The workflow runs automatically for main branch pushes and pull requests, ensuring code consistency checks.
+
+- **Workflow Execution**: The workflow is triggered on pushes to the main branch and pull requests targeting the main branch.
+
+  - It defines a job named build that runs on Ubuntu, allowing for Node.js version customization.
+  - The workflow sets up the specified Node.js version (18.x) and checks out the repository.
+  - It installs project dependencies using npm ci, runs the build script if present, and performs code linting with ESLint (`npm run lint`).
+
+- **Code Consistency Verification:** ESLint scans the codebase, reports violations, and enforces coding standards.
+
+- **Pull Request Integration:** Pull requests are included in the workflow to catch and address issues before merging into the main codebase.
+
+### 🗯️ **Benefits of the CI/CD Setup:**
+
+**Enhanced Code Quality:** The CI/CD pipeline automates code reviews and ensures that code adheres to coding standards, reducing the likelihood of introducing bugs and improving overall code quality.
+
+**Faster Development Cycles:** Automation of build and deployment processes speeds up development cycles, enabling quicker iterations and feature releases.
+
+**Early Issue Detection:** Automated testing and code analysis tools catch issues early in the development process, making it easier to fix them and preventing bugs from reaching production.
+
+**Improved Collaboration:** A well-structured CI/CD pipeline encourages collaboration among team members and provides a standardized way to develop, test, and deploy code.
+
+**Scalability:** Cloud-based deployment options enable the tool to scale efficiently based on demand, ensuring optimal performance.
+
+### 🧑‍💻 Suggested Technologies:
+
+**Currently, we are using:**
+
+- Vite + React.js
+- Node.js
+
+**Technologies: (Suggested)**
+
+- **Docker:** It will help in containerization which simplifies deployment and ensures consistent environments across different stages of the pipeline.
+
+**New Features: (Suggested)**
+
+- Convert JSON to XML
+- Convert JSON to CSV
+- Convert JSON to YAML
+- Minify/Compact
+- Uploading Data through URL
+- 2/3/4 Tab Space options as per the user requirement
 
 ## 📚 FAQ: (Updated!)
 
@@ -100,7 +161,7 @@ The Points System is designed to quantify your contributions to the project. Her
 2. **🔗 Weekly Summary:** A weekly summary will be sent out every Sunday evening that provides an overview of points earned by each intern.
 3. **🔍 Audit:** Interns can request an audit of their points if they feel there has been an error in calculation. The project lead will review the request within 48 hours.
 4. **🏖️ Break Weeks:** Any week where an intern does not achieve at least 375 points will not be counted towards the internship and will be considered a break week.
-  
+
 ### 💰 Weekly Commitments and Stipends
 
 1. **📏 375 Points Minimum:** Interns are required to accumulate at least 375 points per week to stay active in the internship.
@@ -117,7 +178,7 @@ While Issues are meant to be more formal and are usually tied to specific tasks 
 
 ### The Importance of Participating in Discussions
 
-Active participation in discussions is crucial to maintaining a clear understanding of the project's trajectory. The conversations, especially the polls, could influence major decisions regarding the project's direction. Hence, contributing to discussions is compulsory for all project members. 
+Active participation in discussions is crucial to maintaining a clear understanding of the project's trajectory. The conversations, especially the polls, could influence major decisions regarding the project's direction. Hence, contributing to discussions is compulsory for all project members.
 
 To recognize the importance of active discussion participation, we are planning to implement a points system for discussions. Details on the criteria and allocation will be released soon, so stay tuned!
 
