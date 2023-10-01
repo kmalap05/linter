@@ -11,7 +11,7 @@ function Editor({
   error,
   clearJsonCode,
 }) {
-  // eslint-lint-disable-next-line no-unused-vars
+  // eslint-disable-next-line no-unused-vars
   const [text, setText] = useState("");
   const [isCopied, setIsCopied] = useState(false);
   const [selectedFileName, setSelectedFileName] = useState("");
