@@ -15,6 +15,14 @@ module.exports = {
     'react-refresh/only-export-components': [
       'warn',
       { allowConstantExport: true }
-    ]
+    ],
+    'react/prop-types': 'off',
+    'indent': ['error', 2],
+    'semi': ['error', 'always'],
+    // 'quotes': ['error', 'single']
+    'no-unused-vars': 'warn',
+    'no-console': 'warn',
+    'no-trailing-spaces': 'error',
+    // 'space-before-function-paren': ['error', 'always']
   }
 }

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import {useState} from "react";
 import { FormLayout, TextField, Button } from "@shopify/polaris";
 import "./Editor.css";
 import {
@@ -10,7 +10,6 @@ function Editor({
   updatedJson,
   error,
   clearJsonCode,
-  setJsonCode,
 }) {
   const [text, setText] = useState("");
   const [isCopied, setIsCopied] = useState(false);
@@ -146,7 +145,7 @@ function Editor({
             </Button>
           </div>
 
-          
+
         </div>
       </div>
     </FormLayout>

@@ -1,4 +1,4 @@
-import express from 'express'
+import express from 'express';
 
 const app = express();
 
@@ -33,5 +33,6 @@ app.post("/api-local/format-json", (req, res) => {
 const port = 5000;
 
 app.listen(port, () => {
+  // eslint-disable-next-line no-console
   console.log(`Server is running on http://localhost:${port}`);
 });
