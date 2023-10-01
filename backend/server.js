@@ -33,6 +33,5 @@ app.post("/api-local/format-json", (req, res) => {
 const port = 5000;
 
 app.listen(port, () => {
-  // eslint-disable-next-line no-console
-  console.log(`Server is running on http://localhost:${port}`);
+  // console.log(`Server is running on http://localhost:${port}`);
 });

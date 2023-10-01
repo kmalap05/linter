@@ -16,7 +16,8 @@ module.exports = {
       'warn',
       { allowConstantExport: true }
     ],
-    'react/prop-types': 'off',
+    // Additional Rules
+    'react/prop-types': 'off', // off, warn, error
     'indent': ['error', 2],
     'semi': ['error', 'always'],
     // 'quotes': ['error', 'single']
@@ -24,5 +25,7 @@ module.exports = {
     'no-console': 'warn',
     'no-trailing-spaces': 'error',
     // 'space-before-function-paren': ['error', 'always']
+    'no-var': 'error',
+    'no-unused-expressions': 'error'
   }
 }
